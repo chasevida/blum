@@ -1,0 +1,31 @@
+{
+  "name": "blum",
+  "version": "0.0.1",
+  "description": "Blum is a manifest criteria loader that generates a config.json file for a Hapi pack.",
+  "main": "index.js",
+  "dependencies": {
+    "confidence": "latest",
+    "json-format": "latest",
+    "minimist": "latest"
+  },
+  "devDependencies": {
+    "lab": "latest",
+    "rewire": "latest"
+  },
+  "bin": {
+    "blum": "bin/blum"
+  },
+  "scripts": {
+   "test": "make test-cov"
+  },
+  "author": "Mark C.",
+  "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:chasevida/blum.git"
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/chasevida/blum/issues"
+  }
+}
