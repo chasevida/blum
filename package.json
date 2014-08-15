@@ -1,6 +1,6 @@
 {
   "name": "blum",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Blum is a manifest criteria loader that generates a config.json file for a Hapi pack.",
   "main": "index",
   "engines": {
