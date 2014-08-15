@@ -1,0 +1,18 @@
+{
+  "name": "blum-example",
+  "version": "0.0.1",
+  "description": "A simple example of Blum",
+  "main": "index",
+  "private": "true",
+  "engines": {
+    "node": ">=0.10.30"
+  },
+  "dependencies": {
+    "hapi": "latest",
+    "jade": "latest"
+  },
+  "scripts": {
+    "prestart": "../bin/blum -c criteria.js -m manifest.js",
+    "start": "hapi -c config.json"
+  }
+}
