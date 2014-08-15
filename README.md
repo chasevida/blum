@@ -2,6 +2,8 @@
 
 **Blum** is a configuration document generator used to create [Hapi](https://github.com/hapijs/hapi) manifest json files using [Confidence](https://github.com/hapijs/confidence). It creates a `config.json` manifest file through a npm `prestart` script that Hapi can consume on the command line with `hapi -c config.json`. This could be used for quick A/B testing at a high level or for simple things such as environment based server configuration. Whether this is at all a good idea, well I'm not sure.
 
+[![Build Status](https://travis-ci.org/chasevida/blum.svg)](https://travis-ci.org/chasevida/blum)
+
 ### Command Line
 **Blum** requires the following flag options be passed along:
 
@@ -15,6 +17,10 @@
 	
 	// external call
 	& blum -c criteria.js -m manifest.js
+	
+	// package.json script and then run hapi
+	"prestart": "blum -c config/criteria.js -m config/manifest.js"
+	"start": "hapi -c config.json"
 	
 
 ### Criteria & Manifest files
