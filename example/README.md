@@ -8,7 +8,7 @@ Use it straight from the command line:
 
 	$ ../bin/blum -c criteria.js -m manifest.js
 
-Run as a package script:
+Run as a package script *(remove .dist from package.json)*:
 
 	$ npm start
 	

@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "A simple example of Blum",
   "main": "index",
-  "private": "true",
   "engines": {
     "node": ">=0.10.30"
   },
