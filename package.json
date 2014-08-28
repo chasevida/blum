@@ -1,7 +1,7 @@
 {
   "name": "blum",
-  "version": "0.1.2",
-  "description": "Blum is a manifest criteria loader that generates a config.json file for a Hapi pack.",
+  "version": "0.1.3",
+  "description": "A cli tool for generating manifest config.json files for a Hapi server pack. Ideal as a prestart script.",
   "main": "index",
   "engines": {
     "node": ">=0.10.30"
@@ -27,6 +27,12 @@
     "type": "git",
     "url": "git@github.com:chasevida/blum.git"
   },
+  "keywords": [
+    "blum",
+    "cli",
+    "hapi",
+    "manifest"
+  ],
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/chasevida/blum/issues"

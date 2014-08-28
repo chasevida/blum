@@ -117,7 +117,7 @@ describe('Blum', function() {
     describe('write config file', function() {
 
 
-        it('wite file', function(done) {
+        it('write file', function(done) {
 
             // fs stub
             var fsStub = {
