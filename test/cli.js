@@ -26,6 +26,22 @@ var criteria    = require('./fixtures/criteria'),
 // Tests
 describe('Blum', function() {
 
+    var log;
+
+    before(function(done) {
+
+        log = console.log;
+        console.log = function() {};
+
+        done();
+    });
+
+    after(function(done) {
+
+        console.log = log;
+
+        done();
+    });
 
     it('should have cli arguments property', function(done) {
 

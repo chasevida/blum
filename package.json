@@ -12,8 +12,9 @@
     "minimist": "1.1.x"
   },
   "devDependencies": {
-    "lab": "4.0.x",
-    "rewire": "2.1.0"
+    "coveralls": "2.11.x",
+    "lab": "4.3.x",
+    "rewire": "2.1.x"
   },
   "bin": {
     "blum": "./bin/blum"
