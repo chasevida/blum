@@ -1,0 +1,1 @@
+Usage: blum -c [criteria] -m [manifest] -f [filename]
