@@ -89,6 +89,7 @@ describe('lib/cli/', function() {
             }
 
             expect(err).to.be.instanceof(Error);
+            expect(err.message).to.contain('Cannot find file');
 
             fsRevert();
             done();
@@ -128,16 +129,13 @@ describe('lib/cli/', function() {
 
         it('should create file', function(done) {
 
-            var counter = 0;
-            var next = function() {
-                counter ++;
-            };
+            var spy = sinon.spy();
 
-            expect(counter).to.equal(0);
+            expect(spy.callCount).to.equal(0);
 
-            composer.createFile('test.config.json', {}, next);
+            composer.createFile('test.config.json', {}, spy);
 
-            expect(counter).to.equal(1);
+            expect(spy.callCount).to.equal(1);
 
             done();
         });
