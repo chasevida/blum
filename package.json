@@ -1,6 +1,6 @@
 {
   "name": "blum",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "A cli tool for generating manifest config.json files. Ideal as a prestart script.",
   "main": "index",
   "engines": {
@@ -21,7 +21,7 @@
     "blum": "./bin/blum"
   },
   "scripts": {
-   "test": "make test-cov"
+    "test": "make test-cov"
   },
   "author": "Mark C.",
   "license": "BSD",
