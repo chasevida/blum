@@ -1,6 +1,7 @@
 // Load modules
 
-var Lab  = require('lab'),
+var Code = require('code'),
+    Lab  = require('lab'),
     blum = require('../lib');
 
 var lab  = exports.lab = Lab.script();
@@ -8,7 +9,7 @@ var lab  = exports.lab = Lab.script();
 
 // BDD style shortcuts
 var describe = lab.describe,
-    expect   = Lab.expect,
+    expect   = Code.expect,
     it       = lab.it;
 
 
@@ -18,13 +19,13 @@ describe('Blum: lib', function() {
 
     it('should exist', function(done) {
 
-        expect(blum).to.be.a('object');
+        expect(blum).to.be.an.object();
         done();
     });
 
     it('should have a compose function', function(done) {
 
-        expect(blum.compose).to.be.a('function');
+        expect(blum.compose).to.be.a.function();
         done();
     });
 

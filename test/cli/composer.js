@@ -1,6 +1,7 @@
 // Load modules
 
-var Lab      = require('lab'),
+var Code     = require('code'),
+    Lab      = require('lab'),
     rewire   = require('rewire'),
     sinon    = require('sinon');
 
@@ -16,7 +17,7 @@ var after      = lab.after,
     before     = lab.before,
     beforeEach = lab.beforeEach,
     describe   = lab.describe,
-    expect     = Lab.expect,
+    expect     = Code.expect,
     it         = lab.it;
 
 
@@ -112,13 +113,13 @@ describe('lib/cli/', function() {
 
             var result = composer.composeConfigFile({}, {});
 
-            expect(result).to.be.an('object');
+            expect(result).to.be.an.object();
 
             result = composer.composeConfigFile(manifest, criteria);
 
-            expect(result).to.be.an('object');
-            expect(result).to.include.keys('servers');
-            expect(result).to.include.keys('plugins');
+            expect(result).to.be.an.object();
+            expect(result).to.include(['servers']);
+            expect(result).to.include(['plugins']);
 
             done();
         });
