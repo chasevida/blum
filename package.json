@@ -14,7 +14,7 @@
   "devDependencies": {
     "code": "^1.4.0",
     "coveralls": "^2.11.2",
-    "lab": "^5g.5.1",
+    "lab": "^5.5.1",
     "rewire": "^2.3.1",
     "sinon": "^1.14.1"
   },
