@@ -1,4 +1,4 @@
-#Blum
+# Blum
 
 **Blum** is a configuration document generator used to create [Hapi](https://github.com/hapijs/hapi) manifest json files using [Confidence](https://github.com/hapijs/confidence). It creates a `config.json` manifest file through a npm `prestart` script that Hapi (or something else) can consume on the command line with `hapi -c config.json`.
 
@@ -7,7 +7,7 @@ This could be used for quick A/B testing at a high level or for simple things su
 While this was developed to be used in conjunction with a Hapi server pack it can be used anywhere to auto generate a `config.json` file based on the [Confidence](https://github.com/hapijs/confidence) style criteria.
 
 [![Build Status](https://travis-ci.org/chasevida/blum.svg)](https://travis-ci.org/chasevida/blum)
-[![Coverage Status](https://coveralls.io/repos/chasevida/blum/badge.png?branch=master)](https://coveralls.io/r/chasevida/blum?branch=master)
+[![Coverage Status](https://coveralls.io/repos/chasevida/blum/badge.svg?branch=master)](https://coveralls.io/r/chasevida/blum?branch=master)
 
 ## Command Line
 **Blum** takes the following flag options:
@@ -16,7 +16,7 @@ While this was developed to be used in conjunction with a Hapi server pack it ca
 *	`-m` - a *required* file path for `manifest.js` to be edited by confidence and consumed by Hapi.
 *	`-f` - an *optional* output file name/path, defaults to `./config.json`
 
-##Example
+## Example
 
 Use it straight from the command line:
 
