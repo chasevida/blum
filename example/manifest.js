@@ -1,29 +1,43 @@
 
 module.exports = {
-    servers: [{
-        port: {
-            $filter: 'env',
-            production: 3000,
-            $default:   8080
-        },
-        options: {
-            labels: ['web'],
-            views: {
-                path: './views',
-                engines: {
-                    jade: 'jade'
-                },
-                compileOptions: {
-                    $filter: 'env',
-                    production: {
-                        pretty: false
-                    },
-                    $default: {
-                        pretty: true
-                    }
-                }
-            }
+    connections: [
+        {
+            port: {
+                $filter: 'env',
+                production: 3000,
+                $default:   8080
+            },
+            labels: [
+                'http'
+            ]
         }
-    }],
-    plugins: {}
+    ],
+    server: {
+        load: {
+            sampleInterval: 1000
+        }
+    },
+    plugins: {
+        visionary: {
+            engines: {
+                jade: 'jade'
+            },
+            path: './views',
+            compileOptions: {
+                $filter: 'env',
+                production: {
+                    pretty: false
+                },
+                $default: {
+                    pretty: true
+                }
+            },
+            isCached: {
+                $filter: 'env',
+                production: true,
+                $default:   false
+            }
+        },
+        './home': null
+    }
 };

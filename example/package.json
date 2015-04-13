@@ -1,17 +1,20 @@
 {
   "name": "blum-example",
-  "version": "0.0.1",
-  "description": "A simple example of Blum",
+  "version": "0.3.0",
+  "description": "A simple example using Blum with Hapi & Rejoice",
   "main": "index",
   "engines": {
     "node": ">=0.10.30"
   },
   "dependencies": {
+    "blum": "latest",
     "hapi": "latest",
-    "jade": "latest"
+    "jade": "latest",
+    "rejoice": "latest",
+    "visionary": "latest"
   },
   "scripts": {
-    "prestart": "../bin/blum -c criteria.js -m manifest.js",
-    "start": "hapi -c config.json"
+    "prestart": "blum -c criteria.js -m manifest.js",
+    "start": "rejoice -c manifest.config.json -p myplugins"
   }
 }
