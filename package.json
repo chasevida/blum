@@ -1,6 +1,6 @@
 {
   "name": "blum",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "A cli tool for generating manifest config.json files. Ideal as a prestart script.",
   "main": "index",
   "engines": {
