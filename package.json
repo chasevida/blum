@@ -7,14 +7,14 @@
     "node": ">=0.10.30"
   },
   "dependencies": {
-    "confidence": "1.0.0",
-    "json-format": "0.0.1",
-    "yargs": "3.6.0"
+    "confidence": "^1.4.2",
+    "json-format": "^0.1.1",
+    "yargs": "^3.27.0"
   },
   "devDependencies": {
     "code": "^1.4.0",
     "coveralls": "^2.11.2",
-    "lab": "^5.5.1",
+    "lab": "^6.2.0",
     "rewire": "^2.3.1",
     "sinon": "^1.14.1"
   },

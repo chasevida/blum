@@ -18,7 +18,7 @@ module.exports = {
         }
     },
     plugins: {
-        visionary: {
+        vision: {
             engines: {
                 jade: 'jade'
             },

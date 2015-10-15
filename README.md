@@ -6,8 +6,12 @@ This could be used for quick A/B testing at a high level or for simple things su
 
 While this was developed to be used in conjunction with a Hapi it can be used anywhere to auto generate a `configuration.json` based on the [Confidence](https://github.com/hapijs/confidence) style criteria.
 
-[![Build Status](https://travis-ci.org/chasevida/blum.svg)](https://travis-ci.org/chasevida/blum)
-[![Coverage Status](https://coveralls.io/repos/chasevida/blum/badge.svg?branch=master)](https://coveralls.io/r/chasevida/blum?branch=master)
+[![Version npm](https://img.shields.io/npm/v/blum.svg?style=flat-square)](https://www.npmjs.com/package/blum)
+[![Build Status](https://img.shields.io/travis/chasevida/blum/master.svg?style=flat-square)](https://travis-ci.org/chasevida/blum)
+[![Coveralls branch](https://img.shields.io/coveralls/chasevida/blum/master.svg?style=flat-square)](https://coveralls.io/r/chasevida/blum?branch=master)
+[![Dependencies](https://img.shields.io/david/chasevida/blum.svg?style=flat-square)](https://david-dm.org/chasevida/blum)
+
+---
 
 ## Command Line
 **Blum** takes the following flag options:

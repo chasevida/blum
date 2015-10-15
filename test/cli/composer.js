@@ -131,13 +131,10 @@ describe('lib/cli/', function() {
         it('should create file', function(done) {
 
             var spy = sinon.spy();
-
             expect(spy.callCount).to.equal(0);
-
             composer.createFile('test.config.json', {}, spy);
 
             expect(spy.callCount).to.equal(1);
-
             done();
         });
 
@@ -193,5 +190,4 @@ describe('lib/cli/', function() {
         });
 
     });
-
 });

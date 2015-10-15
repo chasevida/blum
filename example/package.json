@@ -11,7 +11,7 @@
     "hapi": "latest",
     "jade": "latest",
     "rejoice": "latest",
-    "visionary": "latest"
+    "vision": "latest"
   },
   "scripts": {
     "prestart": "blum -c criteria.js -m manifest.js",
