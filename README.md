@@ -61,7 +61,7 @@ The below example prettifies the jade html by default but when run in a producti
     	],
     	server: {},
     	plugins: {
-    		visionary: {
+    		vision: {
             	engines: {
                 	jade: 'jade'
             	},
